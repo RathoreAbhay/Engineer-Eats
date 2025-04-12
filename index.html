@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Eats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="header-logo">Engineer Eats</h1>
+            <nav class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <img src="/assets/Card.svg" alt="Search">
+                <button id="cartIcon" class="cart-icon" style="background: none; border: none; padding: 0; font: inherit;">
+                    <img src="/assets/Card-1.svg" alt="Cart">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="cart-container">
+                <img src="/assets/akar-icons_shopping-bag.svg" alt="Empty Cart" class="cart-image">
+                <h2>Cart is Empty</h2>
+                <p>Add some items to the cart to checkout</p>
+                <button id="backToMenu" class="back-button">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Authentic Home <br> food in India</h1>
+                    <p>JTGeats is a courier service in which authentic home-cooked food is delivered to a customer.</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search food you love">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/assets/cooking/cuate.png" alt="Chef Cooking">
+                </div>
+            </div>
+    </section>
+    
+    <!-- Cards  -->
+    <h1 class="page-title">Home Kitchen</h1>
+    <div class="grid-container">
+        <div class="card">
+            <span class="discount">20% OFF</span>
+            <img src="/assets/unsplash_33GPuoFI7v8.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Delicious Burger</div>
+                <div class="card-description">A tasty burger with fresh ingredients.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/unsplash_MqT0asuoIcU.png" alt="Food Item 2">
+            <div class="card-content">
+                <div class="card-title">Spicy Pizza</div>
+                <div class="card-description">A spicy pizza with extra cheese.</div>
+                <div class="card-price">$12.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <span class="discount">15% OFF</span>
+            <img src="/assets/unsplash_60nzTP7_hMQ.png" alt="Food Item 3">
+            <div class="card-content">
+                <div class="card-title">Healthy Salad</div>
+                <div class="card-description">A healthy salad with fresh vegetables.</div>
+                <div class="card-price">$6.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/unsplash_CbNAuxSZTFo.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Jalebi</div>
+                <div class="card-description">Fresh, crispy and sugary.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">20% OFF</span>
+            <img src="/assets/unsplash_33GPuoFI7v8.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Delicious Burger</div>
+                <div class="card-description">A tasty burger with fresh ingredients.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/unsplash_MqT0asuoIcU.png" alt="Food Item 2">
+            <div class="card-content">
+                <div class="card-title">Spicy Pizza</div>
+                <div class="card-description">A spicy pizza with extra cheese.</div>
+                <div class="card-price">$12.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <span class="discount">15% OFF</span>
+            <img src="/assets/unsplash_60nzTP7_hMQ.png" alt="Food Item 3">
+            <div class="card-content">
+                <div class="card-title">Healthy Salad</div>
+                <div class="card-description">A healthy salad with fresh vegetables.</div>
+                <div class="card-price">$6.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/unsplash_CbNAuxSZTFo.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Jalebi</div>
+                <div class="card-description">Fresh, crispy and sugary.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">20% OFF</span>
+            <img src="/assets/unsplash_33GPuoFI7v8.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Delicious Burger</div>
+                <div class="card-description">A tasty burger with fresh ingredients.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/unsplash_MqT0asuoIcU.png" alt="Food Item 2">
+            <div class="card-content">
+                <div class="card-title">Spicy Pizza</div>
+                <div class="card-description">A spicy pizza with extra cheese.</div>
+                <div class="card-price">$12.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <span class="discount">15% OFF</span>
+            <img src="/assets/unsplash_60nzTP7_hMQ.png" alt="Food Item 3">
+            <div class="card-content">
+                <div class="card-title">Healthy Salad</div>
+                <div class="card-description">A healthy salad with fresh vegetables.</div>
+                <div class="card-price">$6.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/unsplash_CbNAuxSZTFo.png" alt="Food Item 1">
+            <div class="card-content">
+                <div class="card-title">Jalebi</div>
+                <div class="card-description">Fresh, crispy and sugary.</div>
+                <div class="card-price">$8.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Carousel -->
+    <section class="popular-items-carousal">
+        <h2 class="popular-items">Popular Items</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="/assets/unsplash_nP11TkjxJ7s.png" alt="Food Item 1">
+                        <div class="card-content">
+                            <h3 class="card-title">Home Made Pizza</h3>
+                            <p class="card-price">₹190</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <span class="discount">20% OFF</span>
+                        <img src="/assets/pexels-omar-mahmood-106343 1.png" alt="Food Item 2">
+                        <div class="card-content">
+                            <h3 class="card-title">Tandoori Chicken</h3>
+                            <p class="card-price">₹184</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="/assets/pexels-mumma-oyens-8799602 1.png" alt="Food Item 3">
+                        <div class="card-content">
+                            <h3 class="card-title">Chilli Chicken</h3>
+                            <p class="card-price">₹116</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="/assets/unsplash_nP11TkjxJ7s.png" alt="Food Item 1">
+                        <div class="card-content">
+                            <h3 class="card-title">Home Made Pizza</h3>
+                            <p class="card-price">₹190</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="/assets/pexels-omar-mahmood-106343 1.png" alt="Food Item 2">
+                        <div class="card-content">
+                            <h3 class="card-title">Tandoori Chicken</h3>
+                            <p class="card-price">₹184</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="/assets/pexels-mumma-oyens-8799602 1.png" alt="Food Item 3">
+                        <div class="card-content">
+                            <h3 class="card-title">Chilli Chicken</h3>
+                            <p class="card-price">₹116</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- <div class="swiper-button-prev"><img src="/assets/Arrow-1.svg" alt="prev"></div>
+            <div class="swiper-button-next"><img src="/assets/Arrow.svg" alt="next"></div> -->
+        </div>
+    </section>
+    
+    <!-- Request Dish Modal  -->
+    <div class="request-button-container">
+        <button id="requestDishBtn" class="request-button">Request a Dish</button>
+    </div>
+    <div id="request-dish-modal" class="request-dish-modal">
+        <div class="request-dish-modal-content">
+            <h2>Request a Dish</h2>
+            <form id="request-dish-form">
+                <label for="request-dish-name">Name*</label>
+                <input type="text" id="request-dish-name" placeholder="Enter name of the dish" required>
+
+                <label for="request-dish-image">Upload an image</label>
+                <input type="url" id="request-dish-image" placeholder="Paste a URL">
+
+                <div class="request-dish-modal-buttons">
+                    <button type="button" id="request-dish-cancel" class="request-dish-cancel-button">Cancel</button>
+                    <button type="submit" id="request-dish-submit" class="request-dish-submit-button">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="food-delivery-section">
+        <h2>We are providing best <br> home cooked food delivery service.</h2>
+        <p>Away from home and craving the tasty homemade recipes? <br>
+        Choose from a selection of our delicious home cooked dishes</p>
+    
+        <div class="video-container">
+            <video id="foodVideo" poster="/assets/media bg-cover.png">
+                <source src="/assets/aboutVideo.mp4" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+            <div class="play-button">
+                <div class="play-icon"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section --> 
+    <section class="contact-section">
+        <div class="contact-form">
+            <h2>Do you have a question <br> or want to become a seller?</h2>
+            <p>Fill the form and our manager will contact you in the next 48 hours.</p>
+            
+            <div class="input-group">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your e-mail">
+            </div>
+    
+            <textarea placeholder="Your message"></textarea>
+    
+            <button class="submit-button">Submit</button>
+        </div>
+    
+        <div class="contact-image">
+            <img src="/assets/Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.svg" alt="Delivery Illustration">
+        </div>
+    </section>    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h1 class="footer-logo">Engineer Eats</h1>
+            <nav class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="social-icons">
+                <img src="/assets/Facebook.svg" alt="Facebook">
+                <img src="/assets/insta.svg" alt="Instagram">
+            </div>
+        </div>
+        <hr class="footer-line">
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
