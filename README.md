@@ -1,5 +1,7 @@
 # Engineer-Eats 🍔🍕🥗
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A simple, responsive food ordering website built using **HTML5**, **CSS3**, and **JavaScript**. This project was created as a static front-end web application prototype for showcasing an online food ordering interface with interactive UI components.
 
 ---
